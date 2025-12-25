@@ -1,0 +1,35 @@
+# --------------------------------------------------
+# tskctl: minimal gitignore (v0)
+# --------------------------------------------------
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor swap / backup files
+*~
+*.swp
+*.swo
+*.bak
+
+# Temporary files
+*.tmp
+
+# Local virtual environments (if any later)
+.venv/
+venv/
+
+# Build / dist artifacts (future-proof)
+dist/
+build/
+
+# Test artifacts
+.coverage
+htmlcov/
+
+# --------------------------------------------------
+# Project rule:
+# Never commit runtime task data
+# --------------------------------------------------
+.tasks/
+
