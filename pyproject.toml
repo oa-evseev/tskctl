@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tskctl"
+version = "0.1.0"
+description = "Strict local task case management CLI"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+
+authors = [
+    { name = "Oleg Evseev" }
+]
+
+dependencies = [
+    "PyYAML>=6.0",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+tskctl = "tskctl.cli:main"
+
+# ------------------------------------------------------------------
+# setuptools configuration (src/ layout)
+# ------------------------------------------------------------------
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -27,9 +27,18 @@ build/
 .coverage
 htmlcov/
 
+# Local test playground
+example/
+
+# Python packaging / build artifacts
+*.egg-info/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
 # --------------------------------------------------
 # Project rule:
 # Never commit runtime task data
 # --------------------------------------------------
 .tasks/
-
